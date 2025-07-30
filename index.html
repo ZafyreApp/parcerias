@@ -37,6 +37,55 @@
       padding: 1rem;
     }
 
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #bfa046;
+    }
+
+    input, select, textarea {
+      padding: 0.8rem;
+      margin-top: 0.3rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #bfa046;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d1a94f;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+      padding-bottom: 2rem;
+    }
+
     .contact-links {
       margin-top: 2rem;
       text-align: center;
@@ -48,14 +97,6 @@
       text-decoration: none;
       display: block;
       margin: 0.3rem 0;
-    }
-
-    footer {
-      margin-top: 3rem;
-      text-align: center;
-      color: #999;
-      font-size: 0.9rem;
-      padding-bottom: 2rem;
     }
 
     @media (max-width: 600px) {
@@ -76,6 +117,31 @@
   </header>
 
   <section>
+    <form action="https://formsubmit.co/rhsafehomeauxiliart@hotmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://zafyreapp.github.io/parcerias/obrigado.html">
+
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required />
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="interesse">Tipo de interesse</label>
+      <select name="interesse" id="interesse" required>
+        <option value="">Selecione</option>
+        <option value="Desenvolvedor">Desenvolvedor</option>
+        <option value="Investidor">Investidor</option>
+        <option value="Parceiro local">Parceiro local</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" required></textarea>
+
+      <button type="submit">Enviar contato</button>
+    </form>
+
     <div class="contact-links">
       <a href="https://wa.me/5511917627885" target="_blank">📱 Falar no WhatsApp</a>
     </div>
