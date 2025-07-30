@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcerias - Zafyre App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #bfa046;
+    }
+
+    header h1 {
+      color: #bfa046;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    section {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #bfa046;
+    }
+
+    input, select, textarea {
+      padding: 0.8rem;
+      margin-top: 0.3rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #bfa046;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d1a94f;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+      padding-bottom: 2rem;
+    }
+
+    .contact-links {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .contact-links a {
+      color: #bfa046;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      margin: 0.3rem 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 1rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Parcerias Zafyre</h1>
+    <p>Estamos em busca de parceiros locais para um projeto digital inovador.<br />Entre em contato e saiba mais.</p>
+  </header>
+
+  <section>
+    <form action="https://formsubmit.co/rhsafehomeauxiliart@hotmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://zafyreapp.github.io/parcerias/obrigado.html">
+
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required />
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="interesse">Tipo de interesse</label>
+      <select name="interesse" id="interesse" required>
+        <option value="">Selecione</option>
+        <option value="Desenvolvedor">Desenvolvedor</option>
+        <option value="Investidor">Investidor</option>
+        <option value="Parceiro local">Parceiro local</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" required></textarea>
+
+      <button type="submit">Enviar contato</button>
+    </form>
+
+    <div class="contact-links">
+      <a href="https://wa.me/5511917627885" target="_blank">📱 Falar no WhatsApp</a>
+      <a href="mailto:rhsafehomeauxiliart@hotmail.com">📧 Enviar e-mail</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Zafyre App - Todos os direitos reservados
+  </footer>
+</body>
+</html>
